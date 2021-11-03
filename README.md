@@ -1,6 +1,6 @@
 # DM_W7_PeerGroupAssignment
 
-#Group members:
+Group members:
 
 1st member: Nicole Beverly Moyo (CS-C3)
 
