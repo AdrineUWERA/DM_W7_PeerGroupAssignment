@@ -10,9 +10,9 @@ def truth_value():
                 y_divides_x.add(value)
 
     if len(y_divides_x) == len(x):
-        print("True")
+        print("True, For all values in set x, there exist a number in set y that divides x.")
     else:
-        print("False")
+        print("False, Not for all values in set x, there exist a number in set y that divides x.")
 
 
 truth_value()

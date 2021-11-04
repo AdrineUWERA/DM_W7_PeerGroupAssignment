@@ -16,11 +16,11 @@ class Listoperations:
         for elements in self.A:
             if elements not in self.B:
                 lst.append(elements)
-        return lst
+        return f"A-B = {lst}"
 
     def cartesian_product(self): # Computes the product of the 2 lists.
         product_set = [[i, j] for i in self.A for j in self.B]
-        return product_set
+        return f"A×B = {product_set}"
 
 
 obj = Listoperations()
