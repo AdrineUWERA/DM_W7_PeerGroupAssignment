@@ -10,11 +10,12 @@ class St1:
         self.cproduct_A = [[x, y] for x in self.A for y in self.A]
 
     def is_relation(self):
-        list_difference = [x for x in self.R if x not in self.cproduct_A]
-        if len(list_difference) == 0:
+        list_Difference = [x for x in self.R if x not in self.cproduct_A]
+        if len(list_Difference) == 0:
             return "R is a subset of A X A\nR is a relation on A"
         else:
-            return f"R is not a subset of A because the following elements is in R but not in A {list_difference}"
+            return f"R is not a subset of A because the following elements is in R but not in A {list_Difference}\n" \
+                   f"R is not a relation on A"
 
     def is_set(self):
         for elements in self.R:
@@ -63,7 +64,9 @@ obj = St1()
 ret = obj.is_set()
 print(ret)
 if ret == "R is a set":
-    print(obj.is_relation())
-print(obj.is_reflex())
-print(obj.is_symmetric())
-print(obj.is_transitive())
+    ret1 = obj.is_relation()
+    print(ret1)
+    if ret1 == "R is a subset of A X A\nR is a relation on A":
+        print(obj.is_reflex())
+        print(obj.is_symmetric())
+        print(obj.is_transitive())
